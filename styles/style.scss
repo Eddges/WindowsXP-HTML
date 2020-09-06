@@ -1,0 +1,163 @@
+*{
+    margin : 0px;
+    padding : 0px;
+    box-sizing : border-box;
+}
+
+body{
+    width : 100%;
+    height : 100vh;
+    display : flex;
+    flex-direction: column;
+}
+
+.Main{
+    width : 100%;
+    height : 95%;
+    background-image: url('../assets/Wallpaper.jpg');
+    background-size: 100%;
+    background-position-y: center;
+    display : flex;
+    flex-direction : column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding : 20px 10px 20px 10px;
+    .Icon{
+        width : 100px;
+        display : flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        // background-color : coral;
+        padding : 10px 5px 10px 5px;
+        transition : all 0.1s;
+        img{
+            width : 40%;
+        }
+        .IconName{
+            margin-top : 8px;
+            color : white;
+            font-family : 'Roboto';
+            font-size : 0.8rem;
+            width : 80%;
+            text-align: center;
+            text-shadow: 0px 0px 5px black;
+            font-weight: 300;
+        }
+        &:hover{
+            cursor : default;
+        }
+    }
+
+    .ComputerContainer{
+        position : absolute;
+        width : 60%;
+        height : 80%;
+        left : 20%;
+        top : 10%;
+        border : solid 4px #005af1;
+        border-radius : 8px 8px 0px 0px;
+        display : flex;
+        flex-direction : column;
+        .ComputerTitleBar{
+            width : 100%;
+            height : 6%;
+            background-color : #005af1;
+            display : flex;
+            .Left{
+                width : 20%;
+                display : flex;
+                align-items: center;
+                img{
+                    height : 70%;
+                    margin-left : 5px;
+                }
+                span{
+                    color : white;
+                    font-family : 'Roboto';
+                    font-size : 0.8rem;
+                    font-weight: 300;
+                    margin-left : 5px;
+                    text-shadow : 0px 0px 5px black;
+                }
+            }
+            .Right{
+                width : 80%;
+                height : 100%;
+                display : flex;
+                align-items: center;
+                justify-content: flex-end;
+                img{
+                    height : 80%;
+                    margin : 0px 3px;
+                    // box-shadow : 1px 0px 5px white;
+                }
+            }
+        }
+    }
+}
+
+.Taskbar{
+    width : 100%;
+    height : 5%;
+    background-color :  #3B77BC;
+    display : flex;
+    box-shadow :  inset 0px 5px 5px rgba(78, 205, 255, 0.329);
+    .StartButton{
+        background-color : #81C046;
+        height : 100%;
+        width : 10%;
+        box-shadow : inset 0px 0px 10px rgba(1, 77, 12, 0.692); 
+        border-radius : 0px 10px 15px 0px;
+        display : flex;
+        justify-content: flex-start;
+        align-items: center;
+        transition : all 0.2s;
+        img{
+            height : 55%;
+            margin-left : 15px;
+        }
+        .Start{
+            font-family: 'Open Sans';
+            font-weight: 700;
+            color : rgb(255, 255, 255);
+            font-size : 1.3rem;
+            text-shadow: 0px 0px 5px rgba(0, 0, 0, 0.616);
+            margin-left : 8px;
+        }
+        &:hover{
+            background-color : #59b106;
+            cursor : default;
+        }
+    }
+    .OpenTasks{
+        width : 78%;
+        height : 100%;
+        
+    }
+    .TaskbarTray{
+        width : 12%;
+        height : 100%;
+        display : flex;
+        align-items: center;
+        justify-content: center;
+        background-color : #42b0db;
+        box-shadow : -2px 0px 2px 0px rgba(0, 0, 0, 0.795), inset 0px 0px 5px #7ad6fa;
+        img{
+            height : 60%;
+            padding : 0px 3px;
+        }
+        .TaskbarTime{
+            color : white;
+            font-size : 0.8rem;
+            font-family : 'Roboto';
+            text-shadow : 0px 0px 5px black;
+            font-weight : 300;
+            margin-left : 4px;
+        }
+    }
+}
+
+.IconClick{
+    background-color : rgba(255, 255, 255, 0.411);
+}
