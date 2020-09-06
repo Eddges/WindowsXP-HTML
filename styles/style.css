@@ -93,6 +93,8 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -webkit-transition: all 0.1s;
+  transition: all 0.1s;
 }
 
 .Main .ComputerContainer .ComputerTitleBar {
@@ -419,5 +421,9 @@ body {
 
 .IconClick {
   background-color: rgba(255, 255, 255, 0.411);
+}
+
+.ComputerContainerHide {
+  opacity: 0;
 }
 /*# sourceMappingURL=style.css.map */
